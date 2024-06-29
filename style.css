@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(rgba(28, 49, 134, 0.7),rgba(19, 52, 183, 0.7)),url(./images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
