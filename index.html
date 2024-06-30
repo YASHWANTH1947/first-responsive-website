@@ -3,23 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Website</title>
+    <title> University</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <section class="header">
-        <nav>
-            <a href="index.html"><img src="./images/logo.png" alt=""></a>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">COURSE</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-            </div>
-        </nav>
-    </section>
+    <!-- Navbar -->
+     <section class="header">
+            <nav>
+                <a href="index.html"><img src="./images/logo.png" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">COURSE</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">ABOUT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+            </nav>
+
+<div class="text-box">
+    <h1>World's Best University</h1>
+    <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Eaque sunt alias dolor quo, ipsum quae.</p>
+    <a href="" class="hero-btn">Visit here to know more.</a>
+</div>
+
+     </section>
+
+<!-- course -->
+<section class="courses">
+    <h2>Courses We Offer</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nihil repellat?</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ut eveniet sequi harum, iste officiis! Sint aliquid obcaecati maxime, fuga rem quas voluptatum nesciunt incidunt?</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ut eveniet sequi harum, iste officiis! Sint aliquid obcaecati maxime, fuga rem quas voluptatum nesciunt incidunt?</p>
+        </div>
+        <div class="course-col">
+            <h3>Graduation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ut eveniet sequi harum, iste officiis! Sint aliquid obcaecati maxime, fuga rem quas voluptatum nesciunt incidunt?</p>
+        </div>
+    </div>
+</section>
+
+<!-- campus -->
+<section class="campus">
+    <h2>Global Campus</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, repellat!</p>
+
+    <div class="row">
+<div class="campus-col">
+    <img src="./images/london.png" alt="">
+    <div class="layer">
+        <h3>LONDON</h3>
+    </div>
+</div>
+<div class="campus-col">
+    <img src="./images/newyork.png" alt="">
+    <div class="layer">
+        <h3>NEWYORK</h3>
+    </div>
+</div>
+<div class="campus-col">
+    <img src="./images/washington.png" alt="">
+    <div class="layer">
+        <h3>WASHINGTON</h3>
+    </div>
+</div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- Javascript fot toggling menu -->
+<script>
+    var menubutton =document.getElementById("navLinks");
+    function showmenu(){
+        menubutton.style.right="0";
+    }
+    function hidemenu(){
+        menubutton.style.right="-150px";
+    }
+
+</script>
 </body>
 </html>
