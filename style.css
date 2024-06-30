@@ -207,13 +207,37 @@ nav .fa-solid{
     margin-right: 30px;
     border-radius: 50%;
 }
+.testimonial-col .fa{
+color: gold;
+}
 
+.cta{
+    margin: 100px auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+                        url(./images/banner2.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        border-radius: 10px;
+                        text-align: center;
+                        padding: 100px 0px;
+}
+.cta h2{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 34px;
+}
 
-
-
-
-
-
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
 
 
 
@@ -254,5 +278,8 @@ nav .fa-solid{
     }
     .row{
         flex-direction: column;
+    }
+    .cta h2{
+        font-size: 24px;
     }
 }
